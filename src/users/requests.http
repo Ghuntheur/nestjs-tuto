@@ -1,11 +1,26 @@
-### Create a new user
+### Signup
 POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-  "email": "admin@admin.com",
-  "password": "admin"
+  "email": "test@test.com",
+  "password": "test"
 }
+
+### Signin
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "test2@test.com",
+  "password": "test"
+}
+
+### sign out
+POST http://localhost:3000/auth/signout
+
+### Get signed in user
+GET http://localhost:3000/auth/whoami
 
 ### find one user
 GET http://localhost:3000/auth/4
@@ -23,6 +38,9 @@ Content-Type: application/json
 
 
 ### remove user
-DELETE http://localhost:3000/auth/100
+DELETE http://localhost:3000/auth/1
 Content-Type: application/json
+
+
+
 
